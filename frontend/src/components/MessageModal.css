@@ -1,0 +1,6 @@
+.messageModal {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    border: 1px solid #adbef1;
+}

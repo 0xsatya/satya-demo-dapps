@@ -1,0 +1,93 @@
+.homeComponent{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex: 1; */
+    /* border: 1px solid #e7eaf3; */
+    border: 1px solid rgb(136, 133, 133);
+
+    border-radius: .5rem;
+    padding: 0 0;
+
+}
+.homeComponentHeader{
+    display: flex;
+    /* flex: 1 1 auto; */
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid #e7eaf3; */
+    padding: .40rem;
+    margin-bottom: 0;
+    /* background-color: #fff; */
+    background-color: #e8f3fa;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    border-bottom: 1px solid #e7eaf3;
+}
+
+.homeComponentHeader  > span {
+    font-weight: bold;
+    color: rgb(177, 6, 6);
+    font-size: larger;
+}
+
+.homedatadiv{
+    display: flex;
+    /* flex: 1 1 auto; */
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-around;
+
+    /* border: 1px solid rgb(44, 38, 38); */
+   /* min-width: 300px; */
+   /* max-width: 500px; */
+
+    /* min-height: 200px; */
+    /* border-radius: 10px; */
+    background-color: white;
+    /* box-shadow: 2px 2px 15px 2px rgb(209, 198, 198); */
+    padding: 5px 0px;
+    /* margin: 10px; */
+
+    
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid #e7eaf3;
+    border-radius: .5rem;
+}
+
+.dataCard {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid #e7eaf3;
+    /* padding: 10px 10px; */
+    margin: 10px 5px;
+    border-radius: .5rem;
+
+}
+.dataCardHeader {
+    display: flex;
+    /* flex: 1 1 auto; */
+    width: 100%;
+    max-height: 50px;
+    /* justify-content: space-between;
+    align-items: center; */
+    /* border: 1px solid #e7eaf3; */
+    padding: 5px 10px;
+    margin: 0px;
+    background-color: #e8f3fa;
+    border-bottom: 1px solid #e7eaf3;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    
+}
+.dataCardHeader > span {
+    font-weight: bold;
+    color: black;
+    font-size: medium;
+}
+.dataCard > div.showData > div.showDataName {
+   min-width: 90px;
+}

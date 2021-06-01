@@ -1,0 +1,51 @@
+.showLogs {
+    display: flex;
+    flex-direction: row;
+    /* flex: 1; */
+    /* max-width: 100%; */
+    font-size: small;
+    justify-content: left;
+    align-items: flex-start;
+    border: 1px solid #e7eaf3;
+
+    border-radius: 5px;
+    /* overflow: hidden; */
+    padding-left: 5px;
+    margin-right: 8px;
+    background-color: white;
+    transition:visibility 1000ms;
+    transition: background-color .50s ease-in-out;
+
+}
+.showLogs:hover {
+    background-color: #f2f2f5;  
+    border: 1px solid #b6c4f0;
+    transition: background-color .20s ease-in-out,box-shadow .20s ease-in-out;
+   
+}
+.newLog {
+    background-color: rgb(219, 245, 219);  
+    border: 1px solid #b6c4f0;
+    transition: background-color .50s ease-in-out;
+}
+
+.logName {
+    font-size: small;
+    font-weight: bold;
+    margin-right: 5px;
+    /* flex: 1 1 auto; */
+    /* background-color: white; */
+}
+.logAddress {
+    /* flex: 2 1 auto; */
+    font-style: italic;
+    cursor: pointer;
+}
+.logValue {
+    display: flex;
+    flex-direction: row;
+    /* flex:1 1 auto; */
+    color: red;
+    /* justify-content: flex-start; */
+    /* align-items: left; */
+}
