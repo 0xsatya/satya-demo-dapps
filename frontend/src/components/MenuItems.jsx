@@ -7,6 +7,7 @@ import {
 const MenuItems = ({onLogin}) => {
     return (
         <div  className='menuItemsContainer'>
+            <div className='menuItemLogo'><Link to='/'><img className="rotate" src="ethicon.svg" alt='ethicon'/></Link></div>
             <ul className='menuItems'>
                 <li className='menuItem'><Link to='/'>Home</Link></li>
                 <li className='menuItem'><Link to='/SimpleStorageDapp'>SimpleStorage Contract</Link></li>

@@ -1,110 +1,144 @@
 .menuItemsContainer {
-    display: flex;
-    /* border: 1px solid black; */
-    top: 0px;
-    height: 50px;
-    width: 100%;
-    background-color: white;
-    /* box-shadow: 0px 6px 8px 3px rgba(153, 88, 88, 0.2); */
-    box-shadow: 0 10px 10px rgba(201, 148, 148, 0.2); 
-    position: sticky;
-    z-index: 1;
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid black; */
+  top: 0px;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  /* box-shadow: 0px 6px 8px 3px rgba(153, 88, 88, 0.2); */
+  box-shadow: 0 10px 10px rgba(201, 148, 148, 0.2);
+  position: sticky;
+  z-index: 1;
 }
 
 .menuItems {
-    display: flex;
-    flex: 1;
-    /* border: 1px solid black; */
-    margin: auto 0;
-    list-style-type: none;
+  display: flex;
+  flex: 1;
+  /* border: 1px solid black; */
+  margin: auto 0;
+  list-style-type: none;
 }
 
 .menuItems > li:nth-of-type(1) {
-	margin-left: 10vw;
+  margin-left: 10vw;
 }
 
 .menuItems > li:last-of-type {
-    margin: 3px 50px;
-	margin-left: auto;
+  margin: 3px 50px;
+  margin-left: auto;
 }
 .menuItems > li:last-of-type:hover {
-    /* font-weight: bold; */
-    cursor: pointer;
-    color: blue;
-    /* text-shadow: 2px 5px 15px #f80202; */
+  /* font-weight: bold; */
+  cursor: pointer;
+  color: blue;
+  /* text-shadow: 2px 5px 15px #f80202; */
 }
 
 .menuItem {
-    min-width: 50px;
-    margin: 0 10px;
-    /* background-color: rgb(58, 54, 54); */
-    background-color: #326586;
-    color: rgb(218, 214, 214);
-    padding: 4px 10px;
-    box-shadow: 0 2px 6px 0 rgb(107, 73, 73), 0 2px 6px 0 #538ea1;
+  min-width: 50px;
+  margin: 0 10px;
+  /* background-color: rgb(58, 54, 54); */
+  background-color: #326586;
+  color: rgb(218, 214, 214);
+  padding: 4px 10px;
+  box-shadow: 0 2px 6px 0 rgb(107, 73, 73), 0 2px 6px 0 #538ea1;
 }
+div.menuItemLogo {
+  width: 40px;
+  height: 40px;
+  margin: 3px 30px;
+  /* background-color: #326586; */
+  /* padding: 2px 2px; */
+  /* border: 1px solid red; */
+  /* border: 2px solid #326586; */
+
+  border-radius: 25px;
+  /* box-shadow: 0 2px 6px 0 rgb(107, 73, 73), 0 2px 6px 0 #538ea1; */
+
+  /* animation: rotation 2s infinite linear; */
+}
+div.menuItemLogo:hover{
+  /* border: 2px solid #326586; */
+  /* box-shadow: 0 2px 6px 0 rgb(107, 73, 73), 0 2px 6px 0 #2e5968; */
+  /* background-color: #252857; */
+  color: red;
+  padding: 2px 2px;
+}
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 li.menuItem a {
-    color: rgb(218, 214, 214);
+  color: rgb(218, 214, 214);
 }
 li.menuItem a:hover {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 .menuItem:hover {
-    min-width: 50px;
-    margin: 0 10px;
-    /* background-color: rgb(90, 87, 87); */
-    /* border: 1px solid rgb(134, 40, 40); */
-    /* background-color: black; */
-    box-shadow: unset;
-    box-shadow: 0 2px 12px 0 rgb(107, 73, 73), 0 2px 12px 0 #538ea1;
-    background-color: #252857;
-    color: white;
+  min-width: 50px;
+  margin: 0 10px;
+  /* background-color: rgb(90, 87, 87); */
+  /* border: 1px solid rgb(134, 40, 40); */
+  /* background-color: black; */
+  box-shadow: unset;
+  box-shadow: 0 2px 12px 0 rgb(107, 73, 73), 0 2px 12px 0 #538ea1;
+  background-color: #252857;
+  color: white;
 
-    /* background-color: #9ad3f8; 
+  /* background-color: #9ad3f8; 
     color: rgb(46, 44, 44); */
 
-    cursor: pointer;   
+  cursor: pointer;
 }
 .loginItem {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-    
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
 }
 .loginItem:hover {
-    border-bottom: 2px solid red;
+  border-bottom: 2px solid red;
 }
-  
-  .loginItem .tooltiptext {
-    visibility: hidden;
-    /* transition:visibility 0.3s linear,opacity 0.3s linear; */
-    width: 120px;
-    background-color: rgba(24, 23, 23, 0.7);
-    color: white;
-    text-align: center;
-    border-radius: 6px;
-    padding: 3px 0;
-    position: absolute;
-    z-index: 1;
-    top: 150%;
-    left: 100%;
-    margin-left: -120px;
-    cursor: default;
-    pointer-events: none;
-  }
-  
-  .loginItem .tooltiptext::after {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    left: 80%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent rgb(236, 232, 227) transparent;
-  }
-  
-  .loginItem:hover .tooltiptext {
-    visibility: visible;
-  }
+
+.loginItem .tooltiptext {
+  visibility: hidden;
+  /* transition:visibility 0.3s linear,opacity 0.3s linear; */
+  width: 120px;
+  background-color: rgba(24, 23, 23, 0.7);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 100%;
+  margin-left: -120px;
+  cursor: default;
+  pointer-events: none;
+}
+
+.loginItem .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 80%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(236, 232, 227) transparent;
+}
+
+.loginItem:hover .tooltiptext {
+  visibility: visible;
+}

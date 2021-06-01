@@ -122,7 +122,7 @@ function SimpleStorageDapp({
   return (
     <div className="contractAppdiv">
       <div className="contractAppHeader">
-        <span>SimpleStorage Contract</span>
+        <span>SimpleStorage Dapp</span>
       </div>
       {isPageReadytoLoad !== true ? (
         <h4>{message}</h4>
