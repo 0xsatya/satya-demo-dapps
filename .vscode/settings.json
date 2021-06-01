@@ -1,0 +1,13 @@
+{
+    "workbench.colorCustomizations": {
+        "[One Monokai Darker]": {   
+            "tab.activeBackground": "#454743",              //253f1b  // Optional
+            "tab.activeBorder": "#f72f2f",
+            "tab.activeForeground": "#DDDDDD",
+             // Active Tab Top Highlighting
+        }
+    },
+    "workbench.activityBar.visible": false,
+    "editor.mouseWheelZoom": true,
+    "editor.mouseWheelScrollSensitivity": 3
+}
