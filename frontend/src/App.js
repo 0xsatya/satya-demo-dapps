@@ -10,7 +10,6 @@ import Home from "./pages/Home";
 import SimpleStorageDapp from "./pages/SimpleStorageDapp";
 import BankDapp from "./pages/BankDapp";
 import * as Utils from "./utilities/utils";
-import Test from "./pages/Test";
 import Footer from "./components/Footer";
 import MessageModal from "./components/MessageModal";
 
@@ -364,9 +363,9 @@ function App() {
                     ethProvider={ethprovider1}
                   />
                 </Route>
-                <Route path="/Test">
+                {/* <Route path="/Test">
                   <Test />
-                </Route>
+                </Route> */}
               </Switch>
             </div>
           )}
