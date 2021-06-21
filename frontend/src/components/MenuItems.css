@@ -3,7 +3,7 @@
   flex-direction: row;
   /* border: 1px solid black; */
   top: 0px;
-  height: 50px;
+  height: 70px;
   width: 100%;
   background-color: white;
   /* box-shadow: 0px 6px 8px 3px rgba(153, 88, 88, 0.2); */
@@ -45,9 +45,9 @@
   box-shadow: 0 2px 6px 0 rgb(107, 73, 73), 0 2px 6px 0 #538ea1;
 }
 div.menuItemLogo {
-  width: 40px;
-  height: 40px;
-  margin: 3px 30px;
+  width: 60px;
+  height: 60px;
+  margin: 3px 10px;
   /* background-color: #326586; */
   /* padding: 2px 2px; */
   /* border: 1px solid red; */
@@ -58,6 +58,13 @@ div.menuItemLogo {
 
   /* animation: rotation 2s infinite linear; */
 }
+
+div.menuItemLogo1 > a > img{
+  width: 60px;
+  height: 50px;
+  margin: 3px 10px;
+}
+
 div.menuItemLogo:hover{
   /* border: 2px solid #326586; */
   /* box-shadow: 0 2px 6px 0 rgb(107, 73, 73), 0 2px 6px 0 #2e5968; */
@@ -65,6 +72,7 @@ div.menuItemLogo:hover{
   color: red;
   padding: 2px 2px;
 }
+
 .rotate {
   animation: rotation 8s infinite linear;
 }
